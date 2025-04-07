@@ -8,7 +8,6 @@ public class Main {
         AnalyticsCounter myAnalytics = new AnalyticsCounter( reader, writer);
         List<String> symptoms = myAnalytics.getSymptoms();
         Map<String,Integer> myCount = myAnalytics.countSymptoms(symptoms);
-        System.out.println(myCount);
         Map<String,Integer> mySort = myAnalytics.sortSymptoms(myCount);
         myAnalytics.writeSymptoms(mySort);
     }
