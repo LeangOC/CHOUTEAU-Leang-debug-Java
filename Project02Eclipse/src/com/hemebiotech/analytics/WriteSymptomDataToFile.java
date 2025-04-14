@@ -5,28 +5,31 @@ import java.io.IOException;
 import java.util.Map;
 
 /**
- * Simple implementation that writes symptom data to a text file.
+ * Implémentation simple qui écrit les données de symptômes dans un fichier texte.
  */
+
 public class WriteSymptomDataToFile implements ISymptomWriter {
 
     private String filepath;
 
     /**
      *
-     * @param filepath a full or partial path to the file where the symptom data should be written
+     * @param filepath un chemin complet ou partiel vers le fichier où les données de symptômes doivent être écrites
      */
+
     public WriteSymptomDataToFile(String filepath) {
         this.filepath = filepath;
     }
 
     /**
-     * Writes each symptom and its count to the file specified by the filepath.
-     * Each line of the file will contain a symptom followed by its count, separated by a colon.
+     * Écrit chaque symptôme et son nombre d'occurrences dans le fichier spécifié par le chemin.
+     * Chaque ligne du fichier contiendra un symptôme suivi de son compte, séparés par un deux-points.
      *
-     * Example line: "headache: 3"
+     * Exemple de ligne : "maux de tête: 3"
      *
-     * @param symptoms a Map containing symptom names as keys and their corresponding counts as values
+     * @param symptoms une Map contenant les noms des symptômes comme clés et leurs comptes comme valeurs
      */
+
     @Override
     public void writeSymptoms(Map<String, Integer> symptoms) {
         try (FileWriter writer = new FileWriter(filepath)) {

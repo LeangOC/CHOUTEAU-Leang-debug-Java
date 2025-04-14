@@ -4,12 +4,6 @@ package com.hemebiotech.analytics;
 import java.util.*;
 
 /**
- * This class is responsible for processing symptom data.
- * It includes reading symptoms, counting their occurrences, sorting them alphabetically,
- * and writing the final results to a file.
- */
-
-/**
  * Cette classe est responsable du traitement des données de symptômes.
  * Elle inclut la lecture des symptômes, le comptage de leurs occurrences,
  * leur tri alphabétique, et l'écriture des résultats finaux dans un fichier.
@@ -18,12 +12,6 @@ import java.util.*;
 public class AnalyticsCounter {
 	private ISymptomReader reader;
 	private ISymptomWriter writer;
-
-	/**
-	 *
-	 * @param reader an implementation of ISymptomReader to read raw symptom data
-	 * @param writer an implementation of ISymptomWriter to output processed symptom data
-	 */
 
 	/**
 	 *
@@ -37,12 +25,6 @@ public class AnalyticsCounter {
 	}
 
 	/**
-	 * Reads the list of symptoms using the provided reader.
-	 *
-	 * @return a List of symptoms as Strings
-	 */
-
-	/**
 	 * Lit la liste des symptômes en utilisant le lecteur fourni.
 	 *
 	 * @return une Liste de symptômes sous forme de chaînes
@@ -52,12 +34,6 @@ public class AnalyticsCounter {
 		return reader.GetSymptoms();
 	}
 
-	/**
-	 * Counts how many times each symptom appears in the list.
-	 *
-	 * @param symptoms a List of symptom strings, possibly with duplicates
-	 * @return a Map with symptom names as keys and number of occurrences as values
-	 */
 
 	/**
 	 * Compte combien de fois chaque symptôme apparaît dans la liste.
@@ -75,13 +51,6 @@ public class AnalyticsCounter {
 	}
 
 	/**
-	 * Sorts the symptoms alphabetically by their names.
-	 *
-	 * @param symptoms a Map of symptoms with their counts
-	 * @return a TreeMap containing the same data but sorted by key (symptom name)
-	 */
-
-	/**
 	 * Trie les symptômes par ordre alphabétique de leurs noms.
 	 *
 	 * @param symptoms une Map de symptômes avec leurs comptes
@@ -93,11 +62,6 @@ public class AnalyticsCounter {
 		return mySort;
 	}
 
-	/**
-	 * Writes the sorted symptom data using the provided writer.
-	 *
-	 * @param symptoms a Map of symptom names and counts to be written
-	 */
 
 	/**
 	 * Écrit les données de symptômes triées en utilisant le writer fourni.

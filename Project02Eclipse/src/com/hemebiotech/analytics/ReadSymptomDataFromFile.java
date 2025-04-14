@@ -6,11 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Simple brute force implementation
- *
- */
-
-/**
  * Classe qui lit les données de symptômes depuis un fichier texte.
  */
 
@@ -18,14 +13,10 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 
 	private String filepath;
 	
-	/**
-	 * 
-	 * @param filepath a full or partial path to file with symptom strings in it, one per line
-	 */
 
 	/**
 	 *
-	 * @param cheminFichier le chemin du fichier texte contenant les symptômes, un par ligne
+	 * @param filepath le chemin du fichier texte contenant les symptômes, un par ligne
 	 */
 
 	public ReadSymptomDataFromFile (String filepath) {
@@ -60,3 +51,4 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 	}
 
 }
+
