@@ -3,5 +3,6 @@ out
 *.iml
 *.class
 symptoms.txt
-result.txt
+result.out
+
 
