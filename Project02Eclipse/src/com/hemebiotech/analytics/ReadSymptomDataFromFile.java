@@ -12,16 +12,16 @@ import java.util.List;
 public class ReadSymptomDataFromFile implements ISymptomReader {
 
 	private String filepath;
-	
 
 	/**
 	 *
-	 * @param filepath le chemin du fichier texte contenant les symptômes, un par ligne
+	 * @param filepath un chemin complet ou partiel vers un fichier contenant des chaînes de symptômes, une par ligne.
 	 */
 
 	public ReadSymptomDataFromFile (String filepath) {
 		this.filepath = filepath;
 	}
+
 	/**
 	 * Lit tous les symptômes depuis le fichier et les retourne dans une liste.
 	 *
