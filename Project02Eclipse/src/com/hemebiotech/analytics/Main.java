@@ -3,11 +3,6 @@ package com.hemebiotech.analytics;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Main class to execute the application logic.
- * It orchestrates reading symptoms from a file, counting them, sorting them,
- * and writing the result to another file.
- */
 public class Main {
     public static void main(String args[]) throws Exception {
         // Initialize the reader with the input file containing the symptom
