@@ -14,7 +14,7 @@ public class AnalyticsCounter {
 
 	/**
 	 *
-	 * @param reader an implementation of ISymptomReader to read raw symptom data
+	 * @param reader an implementation of ISymptomReader to read symptom data
 	 * @param writer an implementation of ISymptomWriter to output processed symptom data
 	 */
 	public AnalyticsCounter(ISymptomReader reader, ISymptomWriter writer) {
