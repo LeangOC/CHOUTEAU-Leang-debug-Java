@@ -10,13 +10,13 @@ import java.util.Map;
  */
 public class Main {
     public static void main(String args[]) throws Exception {
-        // Initialize the reader with the input file containing raw symptom data
+        // Initialize the reader with the input file containing the symptom
         ISymptomReader reader = new ReadSymptomDataFromFile("symptoms.txt");
 
         // Initialize the writer with the output file path for processed data
         ISymptomWriter writer = new WriteSymptomDataToFile("result.out");
 
-        // Create the analytics processor with the reader and writer
+        // Initialize  "myAnalytics" objet with the reader and writer objets
         AnalyticsCounter myAnalytics = new AnalyticsCounter(reader, writer);
 
         // Read the symptoms from the input file
