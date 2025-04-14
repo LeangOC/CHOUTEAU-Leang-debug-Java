@@ -28,7 +28,7 @@ public class AnalyticsCounter {
 	 * @return a List of symptoms as Strings
 	 */
 	public List<String> getSymptoms() {
-		return reader.GetSymptoms();
+		return reader.getSymptoms();
 	}
 
 	/**
